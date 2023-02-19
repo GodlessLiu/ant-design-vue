@@ -90,3 +90,11 @@ pnpm exec husky add .husky/commit-msg " pnpm exec commitlint -e \"$1\""
 pnpm exec commitlint -e "$1"
 ```
 #### 配置代码提交错误规范
+安装lint-staged依赖
+```bash
+pnpm add lint-staged -D
+```
+执行代码，生产.husky文件
+```bash
+pnpm exec husky add .husky/pre-commit"pnpm exec lint-staged”
+````
