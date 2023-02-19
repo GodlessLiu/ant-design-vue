@@ -89,3 +89,4 @@ pnpm exec husky add .husky/commit-msg " pnpm exec commitlint -e \"$1\""
 . "$(dirname -- "$0")/_/husky.sh"
 pnpm exec commitlint -e "$1"
 ```
+#### 配置代码提交错误规范
